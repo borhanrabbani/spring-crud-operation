@@ -1,11 +1,13 @@
-package com.springcrud.dao;
+package com.spring.crud.dao;
 
 import java.util.List;
 
-import com.springcrud.entity.Employee;
+import com.spring.crud.entity.Employee;
 
 public interface EmployeeDAO {
 	
 	List<Employee> findAll();
+	
+	
 
 }
