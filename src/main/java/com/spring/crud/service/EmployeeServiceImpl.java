@@ -56,5 +56,10 @@ public class EmployeeServiceImpl implements EmployeeService {
 	public void deleteById(int id) {
 		employeeRepository.deleteById(id);
 	}
+	
+	@Override
+	public List<Employee> searchEmployees(String keyword) {
+		return employeeRepository.search(keyword);
+	}
 
 }
